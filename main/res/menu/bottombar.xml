@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottombar_1"
+        android:title="@string/bottombar_1"
+        android:icon="@drawable/homepage"/>
+
+    <item android:id="@+id/bottombar_2"
+        android:title="@string/bottombar_2"
+        android:icon="@drawable/account"/>
+
+    <item android:id="@+id/bottombar_3"
+        android:title="@string/bottombar_3"
+        android:icon="@drawable/more"/>
+</menu>

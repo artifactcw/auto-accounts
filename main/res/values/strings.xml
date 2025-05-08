@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">自动记账</string>
+
+    <!--底部导航栏-->
+    <string name="bottombar_1">首页</string>
+    <string name="bottombar_2">记账</string>
+    <string name="bottombar_3">更多</string>
+
+</resources>

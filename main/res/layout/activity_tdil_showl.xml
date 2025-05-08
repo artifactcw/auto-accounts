@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TDillShow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/bt_return"
+            android:id="@+id/td_return"
+            android:onClick="bt_return"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:id="@+id/td_top_bt"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/td_scroll">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--第一展示框-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/yellow"
+                android:layout_marginTop="5dp">
+
+                <!--月份及进入按钮-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="十月支出"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:id="@+id/td_month"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:id="@+id/td_m_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_toEndOf="@+id/td_month"
+                        android:text="0.00"
+                        android:textColor="@color/red"
+                        android:textSize="40sp" />
+                </RelativeLayout>
+
+
+                <!--收入与结余-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收入:"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/income"
+                        android:textSize="23sp"
+                        android:text="0.00"
+                        android:layout_marginStart="7dp"
+                        android:id="@+id/td_m_income"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="结余:"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="15dp"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/surplus"
+                        android:textSize="23sp"
+                        android:text="0.00"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/td_m_surplus"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预算:"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"/>
+
+                    <TextView
+                        android:id="@+id/td_m_budget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="0.00"
+                        android:textColor="@color/blue"
+                        android:textSize="23sp" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/td_scroll_lin"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/p1_screen"
+        android:id="@+id/td_fullscreen"
+        android:visibility="gone"/>
+
+</RelativeLayout>
